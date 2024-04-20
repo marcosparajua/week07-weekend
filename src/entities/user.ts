@@ -3,7 +3,7 @@ export type User = {
   name: string;
   email: string;
   password?: string;
-  birthDate?: Date;
+  birthDate: string;
   role: 'admin' | 'user' | 'guest';
 };
 
@@ -11,7 +11,7 @@ export type UserCreateDto = {
   name: string;
   email: string;
   password: string;
-  birthDate?: Date;
+  birthDate: string;
 };
 
 export type UserUpdateDto = Partial<UserCreateDto>;
